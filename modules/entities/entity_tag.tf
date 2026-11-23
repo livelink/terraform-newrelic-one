@@ -19,7 +19,7 @@ resource "newrelic_entity_tags" "default" {
     for_each = local.entities_tags[each.key]
     content {
       key    = tag.key
-      values = tag.value
+      values = flatten([tag.value])
     }
   }
 }
