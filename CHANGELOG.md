@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.2](https://github.com/livelink/terraform-newrelic-one/compare/v2.7.1...v2.7.2) (2026-11-23)
+
+
+### Bug Fixes
+
+* **entities:** force tag value array ([1cbd1cb](https://github.com/livelink/terraform-newrelic-one/commit/1cbd1cbf2f569d2f92b798cdedfb6e87e750a760))
+* **entities:** force tag value array ([7bf7c6f](https://github.com/livelink/terraform-newrelic-one/commit/7bf7c6fd1a873e0d94df8a26f6400beb3542ef3d))
+
 ## [2.7.0](https://github.com/Tensho/terraform-newrelic-one/compare/v2.6.0...v2.7.0) (2026-09-10)
 
 
