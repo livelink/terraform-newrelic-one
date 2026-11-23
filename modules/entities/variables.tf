@@ -6,8 +6,8 @@ variable "entities" {
     type        = optional(string)
     domain      = optional(string)
     ignore_case = optional(bool)
-    tags        = optional(map(string), {})
-    add_tags    = optional(map(string), {})
+    tags        = optional(map(any))
+    add_tags    = optional(map(any))
   }))
 
   default = {}
@@ -16,7 +16,7 @@ variable "entities" {
 variable "global_add_tags" {
   description = "Tags to be added to all entities globally."
 
-  type = map(string)
+  type = map(any)
 
   default = {}
 }
