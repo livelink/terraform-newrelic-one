@@ -25,13 +25,14 @@ No modules.
 
 | Name | Type |
 | ---- | ---- |
+| [newrelic_entity_tags.default](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/entity_tags) | resource |
 | [newrelic_entity.default](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/data-sources/entity) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
-| <a name="input_entities"></a> [entities](#input\_entities) | Entity lookups keyed by logical name. Resolves entities created outside Terraform (e.g. APM applications) to their GUID and name for use in NRQL alert condition filters. | <pre>map(object({<br/>    name        = string<br/>    type        = optional(string)<br/>    domain      = optional(string)<br/>    ignore_case = optional(bool)<br/>    tags        = optional(map(string), {})<br/>  }))</pre> | `{}` | no |
+| <a name="input_entities"></a> [entities](#input\_entities) | Entity lookups keyed by logical name. Resolves entities created outside Terraform (e.g. APM applications) to their GUID and name for use in NRQL alert condition filters. | <pre>map(object({<br/>    name        = string<br/>    type        = optional(string)<br/>    domain      = optional(string)<br/>    ignore_case = optional(bool)<br/>    tags        = optional(map(string), {})<br/>    add_tags    = optional(map(string), {})<br/>  }))</pre> | `{}` | no |
 
 ## Outputs
 

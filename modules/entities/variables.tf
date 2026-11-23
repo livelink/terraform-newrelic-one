@@ -7,6 +7,7 @@ variable "entities" {
     domain      = optional(string)
     ignore_case = optional(bool)
     tags        = optional(map(string), {})
+    add_tags    = optional(map(string), {})
   }))
 
   default = {}
