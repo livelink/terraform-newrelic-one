@@ -33,6 +33,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_entities"></a> [entities](#input\_entities) | Entity lookups keyed by logical name. Resolves entities created outside Terraform (e.g. APM applications) to their GUID and name for use in NRQL alert condition filters. | <pre>map(object({<br/>    name        = string<br/>    type        = optional(string)<br/>    domain      = optional(string)<br/>    ignore_case = optional(bool)<br/>    tags        = optional(map(string), {})<br/>    add_tags    = optional(map(string), {})<br/>  }))</pre> | `{}` | no |
+| <a name="input_global_add_tags"></a> [global\_add\_tags](#input\_global\_add\_tags) | Tags to be added to all entities globally. | `map(string)` | `{}` | no |
 
 ## Outputs
 

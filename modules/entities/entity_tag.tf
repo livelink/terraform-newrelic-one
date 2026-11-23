@@ -2,7 +2,8 @@
 # (`client` tag is already assigned elsewhere)
 locals {
   entities_tags = { for k, v in var.entities : k => merge(
-    v.add_tags, {
+    v.add_tags,
+    var.global_add_tags, {
       "managed_by" = ["terraform"]
     }
   ) }

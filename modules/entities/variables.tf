@@ -12,3 +12,11 @@ variable "entities" {
 
   default = {}
 }
+
+variable "global_add_tags" {
+  description = "Tags to be added to all entities globally."
+
+  type = map(string)
+
+  default = {}
+}
