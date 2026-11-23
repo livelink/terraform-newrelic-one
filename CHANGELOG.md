@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.3](https://github.com/livelink/terraform-newrelic-one/compare/v2.7.2...v2.7.3) (2026-11-23)
+
+
+### Bug Fixes
+
+* **entities:** defaults for nested maps ([accd306](https://github.com/livelink/terraform-newrelic-one/commit/accd3066107db0edcf6bc17232dc54619d0f6e79))
+* **entities:** map type constraints ([608e244](https://github.com/livelink/terraform-newrelic-one/commit/608e244845ff371dc385ed3a135933479c103d22))
+
 ## [2.7.2](https://github.com/livelink/terraform-newrelic-one/compare/v2.7.1...v2.7.2) (2026-11-23)
 
 
